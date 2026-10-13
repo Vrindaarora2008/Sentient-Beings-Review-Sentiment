@@ -1,0 +1,14 @@
+{
+  "phase": "A",
+  "seed": 42,
+  "train_rows": 40000,
+  "test_rows": 10000,
+  "train_positive": 20000,
+  "train_negative": 20000,
+  "test_positive": 5000,
+  "test_negative": 5000,
+  "duplicate_review_rows_after_first": 418,
+  "conflicting_label_review_texts": 0,
+  "duplicate_policy": "Retain all original rows; identical review text cannot cross train/test boundary.",
+  "test_usage": "Locked until Phase D; no training, tuning, or preprocessing decisions on test data."
+}
