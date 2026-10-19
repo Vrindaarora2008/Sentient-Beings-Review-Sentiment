@@ -1,0 +1,46 @@
+Phase 0: Problem Statement and Use Cases
+Problem Statement
+Online movie reviews contain rich, unstructured opinion data, but it is not immediately clear which specific words, phrases, or stylistic patterns drive a review toward being classified as negative versus positive. Simple accuracy metrics from sentiment classifiers tell us that a model works, but not why it works or where it fails. This project aims to go beyond black-box accuracy reporting by building an interpretable NLP pipeline — comparing logistic regression, Naïve Bayes, and SVM across different preprocessing and feature-representation choices — in order to understand the linguistic and corpus-level artefacts that make a review "read" as negative, and to rigorously document the failure modes of each approach.
+
+Use Cases
+UC1 — Identify Drivers of Negative Sentiment
+Actor: Data scientist / project team
+Goal: Determine which words, phrases, and patterns are most strongly associated with negative movie reviews.
+Description: The team analyzes model coefficients and corpus artefacts from logistic regression, Naïve Bayes, and SVM classifiers to understand what textual features push a review toward a negative classification.
+
+UC2 — Compare Preprocessing Strategies
+Actor: Data scientist / project team
+Goal: Evaluate how different text-cleaning steps (HTML removal, punctuation handling, stopword removal, etc.) affect model performance and interpretability.
+Description: The team runs ablation studies, systematically toggling preprocessing steps on and off to measure their individual impact on accuracy and feature importance.
+
+UC3 — Compare Feature Representations
+Actor: Data scientist / project team
+Goal: Assess the trade-offs between Bag-of-Words and TF-IDF representations.
+Description: The team trains identical models on both representations and compares performance, interpretability, and the resulting top features for negative vs. positive sentiment.
+
+UC4 — Benchmark Multiple Classifiers
+Actor: Data scientist / project team
+Goal: Compare logistic regression, Naïve Bayes, and SVM on the same dataset and splits.
+Description: The team trains each model under identical conditions (same preprocessing, same train/test split) to fairly evaluate which algorithm best captures sentiment signals.
+
+UC5 — Perform Error Analysis
+Actor: Data scientist / project team
+Goal: Understand why a model misclassifies certain reviews.
+Description: The team inspects false positives and false negatives to identify corpus artefacts (e.g., sarcasm, mixed sentiment, HTML remnants) that confuse the classifiers, going beyond a simple accuracy score.
+
+UC6 — Maintain a Trustworthy Evaluation Set
+Actor: Data scientist / project team
+Goal: Ensure model evaluation results are unbiased and reproducible.
+Description: A protected, stratified test split (10,000 reviews) is created early and locked until Phase D, preventing data leakage from cleaning, tuning, or training decisions in earlier phases.
+
+UC7 — Reproducible Setup for Collaborators
+Actor: New team member / contributor
+Goal: Quickly set up the project environment and reproduce the EDA results.
+Description: A contributor follows the README instructions to download the dataset, install dependencies, and run the notebook to regenerate the exact same data splits and plots.
+
+Phase 0 checklist
+[x]  Draft problem statement defining project scope and goals
+[x]  Define core use cases (UC1–UC7) guiding later phases
+[ ]  Review and validate use cases with team/stakeholders
+[ ]  Confirm problem statement against Project-Handbook.md rubric (if applicable)
+[ ]  Commit Phase 0 documentation to the team repository
