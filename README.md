@@ -54,4 +54,3 @@ split_metadata.json           # generated; safe to commit
 
 IMDB Dataset of 50K Movie Reviews, based on Maas et al. (2011), distributed on Kaggle: https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
-**Note:** The separate `Project-Handbook.md` mentioned in the assignment was not provided here; confirm any additional repository naming, commit-history, group-rubric or submission rules from that handbook.
