@@ -1,0 +1,2 @@
+model,vectorizer,preprocessing,accuracy,precision,recall,f1_score,roc_auc
+Logistic Regression,CountVectorizer,HTML removal,0.8855,0.8792424987702903,0.89375,0.8864368956112075,0.9515110624999998

@@ -1,0 +1,5 @@
+Model,Best CV F1-Score,Best Parameters,Tuning Time (seconds)
+Logistic Regression,0.8959879832769371,"{'classifier__class_weight': None, 'classifier__C': 10}",127.84079766273499
+Linear SVM,0.8939049683828936,"{'classifier__class_weight': 'balanced', 'classifier__C': 1}",136.52246117591858
+Multinomial Naive Bayes,0.8549855604314357,"{'classifier__fit_prior': False, 'classifier__alpha': 0.1}",113.4478919506073
+Decision Tree,0.7434468329070452,"{'classifier__min_samples_split': 2, 'classifier__min_samples_leaf': 10, 'classifier__max_depth': 20, 'classifier__class_weight': 'balanced'}",371.30615520477295
